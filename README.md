@@ -1,4 +1,6 @@
-# Сборка manticore search engine
+# Build manticore search engine
+
+See original https://github.com/manticoresoftware/manticoresearch/tree/master/dist/build_dockers
 
 ```bash
 mkdir -p $HOME/manticore-build && \
