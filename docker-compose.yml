@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  build_manticore:
+    container_name: "build_manticore"
+    build:
+      context: ${PWD}
+      dockerfile: .dockerfile
+      args:
+        BOOST_VER: ${BOOST_VER}
+        CMAKE_VER: ${CMAKE_VER}
+    env_file: .env
+    volumes:
+      - ${PWD}/source:/manticore
